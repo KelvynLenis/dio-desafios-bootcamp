@@ -1,0 +1,111 @@
+:root {
+  --vermelho: #E50914;
+  --preto: #141414;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* element base */
+
+body {
+  background: var(--preto);
+  font-family: 'Times New Roman', Times, serif;
+  color: #fff;
+}
+
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .logo {
+  margin-left: 5px;
+  color: var(--vermelho);
+  font-family: 'Arial Black', Helvetica, sans-serif;
+  font-size: 40px;
+}
+
+header nav a {
+  margin: 0 0.2rem;
+
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  
+  text-decoration: none;
+  color: #AAA;
+}
+
+header nav a:hover {
+  color: #fff;
+}
+
+/* main film  */
+
+.main-film {
+  font-size: 16px;
+  background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)100%), url('https://images.justwatch.com/backdrop/195325266/s640/naruto-shippuden');
+
+  height: 400px;
+  background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.main-film .description {
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+
+.main-film .title {
+  margin-top: 15%;
+  font-size: 40px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.button {
+  background-color: rgba(0,0,0,.5);
+  border: none;
+  color: white;
+
+  padding: 15px 30px;
+  margin-right: 15px;
+  font-size: 12px;
+
+  cursor: pointer;
+  transition: .3s ease all;
+}
+
+.button:hover {
+  background-color: white;
+  color: black;
+}
+
+.button i {
+  margin-right: 8px;
+}
+
+.container {
+  margin-left: 20px;
+}
+
+.main-film .container {
+  width: 70%;
+}
+
+.box-film {
+  height: 80%;
+  width: 80%;
+  display: flex;
+}
+
+.carousel-movies {
+  margin-top: 5px;
+}
+
